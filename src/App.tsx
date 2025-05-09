@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import type { Task } from './components/TodoItem';
 import TodoInput from './components/TodoInput';
+import TodoList from './components/TodoList';
 
 function App() {
   const [tasks, setTasks]= useState<Task[]>([]);
@@ -14,11 +15,7 @@ function App() {
         <h1 className="text-2xl font-bold mb-8">Todo-List Website</h1>
         <TodoInput onAddTask={onAddTask}/>
         <h1 className="text-2lg font-bold mt-8">Your list: </h1>
-        <ul>
-          {tasks.map((tasks) => (
-            <li key={tasks.id}>{tasks.title}</li>
-          ))}
-        </ul>
+        <TodoList tasks={tasks} />
       </div>
     </div>
   );
