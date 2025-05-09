@@ -1,9 +1,6 @@
-interface TodoItemProps {
-  text: string;
-}
-
-const TodoItem: React.FC<TodoItemProps> = ({ text }) => {
-  return <li>{text}</li>;
+export type Task = {
+  id: number;
+  title: string;
+  isCompleted: boolean;
+  priority?: 'p1' | 'p2' | 'p3';
 };
-
-export default TodoItem;
