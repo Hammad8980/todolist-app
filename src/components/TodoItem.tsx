@@ -1,6 +1,31 @@
-export type Task = {
-  id: number;
-  title: string;
-  isCompleted: boolean;
-  priority?: 'p1' | 'p2' | 'p3';
-};
+import type { PropsWithChildren } from "react";
+import type { Task } from "./TodoTaskTypes";
+
+type TodoItemProps = PropsWithChildren<{
+  task: Task;
+  onDelete: (id: number) => void;
+  onToggle: (id: number) => void;
+}>;
+
+export default function TodoItem({ task, children,  onDelete, onToggle }: TodoItemProps) {
+  return (
+    <li className="flex items-center gap-2 py-2 border-b">
+      <input 
+        type="checkbox" 
+        checked={task.isCompleted}
+        onChange={() => onToggle(task.id)}
+        className="h-5 w-5"
+      />
+      <span className={task.isCompleted ? "line-through text-gray-500" : ""}>
+        {task.title}
+      </span>
+      <button 
+        onClick={() => onDelete(task.id)}
+        className="ml-auto bg-red-500 hover:bg-red-700 text-white text-sm py-1 px-2 rounded"
+      >
+        Delete
+      </button>
+      {children}
+    </li>
+  );
+}

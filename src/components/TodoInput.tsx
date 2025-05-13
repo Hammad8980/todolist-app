@@ -1,19 +1,19 @@
-import { useState, type FormEvent } from "react";
+import { useState, type FormEvent} from 'react';
 type TodoInputProps = {
-  onAddTask: (taskName:string) => void
-}
+  onAddTask: (taskName: string) => void;
+};
 
-function TodoInput({onAddTask} : TodoInputProps) {
-    const [taskName, setTaskName] = useState('');
-    const handleAddTasks = (e: FormEvent<HTMLFormElement>) => {
-      e.preventDefault(); // Sometimes page is refreshed upon trigger of Event so this property is to prevent the browser from doing that
-      onAddTask(taskName);
-      setTaskName('')
-    }
+function TodoInput({ onAddTask }: TodoInputProps) {
+  const [taskName, setTaskName] = useState('');
+  const handleAddTasks = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault(); // Sometimes page is refreshed upon trigger of Event so this property is to prevent the browser from doing that
+    onAddTask(taskName);
+    setTaskName('');
+  };
   return (
     <form onSubmit={handleAddTasks}>
-    {/*Below is the traditional onKeyDown method Commented for learning purposes*/}
-    {/* <input
+      {/*Below is the traditional onKeyDown method Commented for learning purposes*/}
+      {/* <input
           value={taskName}
           placeholder='Enter text...'
           onChange={(e) => setTaskName(e.target.value)}
@@ -25,12 +25,15 @@ function TodoInput({onAddTask} : TodoInputProps) {
         >
           +
         </button> */}
-        <input
-          value={taskName}
-          placeholder='Enter text...'
-          onChange={(e) => setTaskName(e.target.value)}
-        />
-        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold ml-2 pb-0.5 px-2 rounded" > + </button> 
+      <input
+        value={taskName}
+        placeholder="Enter text..."
+        onChange={(e) => setTaskName(e.target.value)}
+      />
+      <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold ml-2 pb-0.5 px-2 rounded">
+        {' '}
+        +{' '}
+      </button>
     </form>
   );
 }
