@@ -26,11 +26,15 @@ function TodoInput({ onAddTask }: TodoInputProps) {
           +
         </button> */}
       <input
+        type="text"
         value={taskName}
         placeholder="Enter text..."
         onChange={(e) => setTaskName(e.target.value)}
+        className="flex-grow p-2 border rounded-l focus:outline-none focus:ring-2 focus:ring-blue-300"
       />
-      <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold ml-2 pb-0.5 px-2 rounded">
+      <button
+      type='submit'
+       className="bg-blue-500 hover:bg-blue-700 text-white font-bold ml-2 pb-0.5 px-2 rounded">
         {' '}
         +{' '}
       </button>
