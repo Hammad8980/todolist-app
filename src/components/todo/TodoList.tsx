@@ -25,6 +25,17 @@ export default function TodoItem({ task, onDelete, onToggle, children }: TodoIte
       >
         Delete
       </button>
+      <span className="text-sm text-gray-500  border-l pl-2">
+        {task.priority === 'p1' ? (
+          <span className="text-green-500">Low</span>
+        ) : task.priority === 'p2' ? (
+          <span className="text-yellow-500">Medium</span>
+        ) : task.priority === 'p3' ? (
+          <span className="text-red-500">High</span>
+        ) : (
+          <span className="text-gray-500">Unknown</span>
+        )}
+      </span>
       {children}
     </li>
   );

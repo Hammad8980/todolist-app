@@ -1,5 +1,8 @@
-import { useReducer } from 'react';
+import { useReducer, useEffect } from 'react';
 import { type Task } from '../TodoTaskTypes';
+import { saveToStorage, loadFromStorage } from '../../../utils/Storage';
+
+const STORAGE_KEY = 'Todo-App-Tasks';
 
 type Action =
   | { type: 'ADD_TASK'; payload: string }
@@ -25,7 +28,15 @@ function todoReducer(state: Task[], action: Action): Task[] {
 }
 
 export function useTodos() {
-  const [todos, dispatch] = useReducer(todoReducer, []);
+  const [todos, dispatch] = useReducer(todoReducer, loadFromStorage<Task[]>(STORAGE_KEY, []));
+  useEffect(() => {
+    console.log('Saving todos...');
+    saveToStorage(STORAGE_KEY, todos);
+    console.log('Todos: ', todos);
+    return () => {
+      console.log('Cleaning up: effect is being cleaned');
+    };
+  }, [todos]);
 
   const onAddTask = (title: string) => {
     if (title.trim() !== '') {
