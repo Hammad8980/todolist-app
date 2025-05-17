@@ -11,7 +11,7 @@ function TodoInput({ onAddTask }: TodoInputProps) {
     setTaskName('');
   };
   return (
-    <form onSubmit={handleAddTasks}>
+    <form className='flex' onSubmit={handleAddTasks}>
       {/*Below is the traditional onKeyDown method Commented for learning purposes*/}
       {/* <input
           value={taskName}
@@ -34,7 +34,7 @@ function TodoInput({ onAddTask }: TodoInputProps) {
       />
       <button
       type='submit'
-       className="bg-blue-500 hover:bg-blue-700 text-white font-bold ml-2 pb-0.5 px-2 rounded">
+       className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 ml-2 rounded-r rounded-l">
         {' '}
         +{' '}
       </button>

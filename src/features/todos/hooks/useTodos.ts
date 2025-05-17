@@ -1,23 +1,44 @@
-import { useState } from 'react';
+import { useReducer } from 'react';
 import { type Task } from '../TodoTaskTypes';
 
+type Action =
+  | { type: 'ADD_TASK'; payload: string }
+  | { type: 'DELETE_TASK'; payload: number }
+  | { type: 'TOGGLE_TASK'; payload: number };
+
+function todoReducer(state: Task[], action: Action): Task[] {
+  switch (action.type) {
+    case 'ADD_TASK':
+      return [
+        ...state,
+        { id: Date.now(), title: action.payload, isCompleted: false, priority: 'p1' },
+      ];
+    case 'DELETE_TASK':
+      return state.filter(todo => todo.id !== action.payload);
+    case 'TOGGLE_TASK':
+      return state.map(todo =>
+        todo.id === action.payload ? { ...todo, isCompleted: !todo.isCompleted } : todo
+      );
+    default:
+      return state;
+  }
+}
+
 export function useTodos() {
-  const [todos, setTodos] = useState<Task[]>([]);
+  const [todos, dispatch] = useReducer(todoReducer, []);
 
   const onAddTask = (title: string) => {
     if (title.trim() !== '') {
-      setTodos([...todos, { id: Date.now(), title, isCompleted: false, priority: 'p1' }]);
+      dispatch({ type: 'ADD_TASK', payload: title });
     }
   };
 
   const onDeleteTask = (id: number) => {
-    setTodos(todos.filter(todo => todo.id !== id));
+    dispatch({ type: 'DELETE_TASK', payload: id });
   };
 
   const onToggleTask = (id: number) => {
-    setTodos(
-      todos.map(todo => (todo.id === id ? { ...todo, isCompleted: !todo.isCompleted } : todo))
-    );
+    dispatch({ type: 'TOGGLE_TASK', payload: id });
   };
 
   return {
