@@ -1,5 +1,5 @@
 import type { PropsWithChildren } from "react";
-import type { Task } from "./TodoTaskTypes";
+import type { Task } from "../../features/todos/TodoTaskTypes";
 
 type TodoItemProps = PropsWithChildren<{
   task: Task;
