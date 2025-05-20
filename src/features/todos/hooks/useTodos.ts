@@ -31,8 +31,13 @@ export function useTodos() {
   const [todos, dispatch] = useReducer(todoReducer, loadFromStorage<Task[]>(STORAGE_KEY, []));
   useEffect(() => {
     console.log('Saving todos...');
-    saveToStorage(STORAGE_KEY, todos);
-    console.log('Todos: ', todos);
+    try {
+      saveToStorage(STORAGE_KEY, todos);
+      console.log('Todos: ', todos);
+    } catch (error) {
+      console.log(error);
+    }
+
     return () => {
       console.log('Cleaning up: effect is being cleaned');
     };
