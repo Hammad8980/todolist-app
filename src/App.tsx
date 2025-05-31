@@ -1,5 +1,5 @@
-import MainLayout from './components/layout/MainLayout.tsx';
-import TodosSection from './features/todos/TodosSection.tsx';
+import MainLayout from './components/layout/MainLayout';
+import TodosSection from './features/todos/TodosSection';
 function App() {
   return (
     <MainLayout>
