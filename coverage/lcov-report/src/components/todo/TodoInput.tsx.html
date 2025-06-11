@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">90% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>9/10</span>
+                <span class='fraction'>0/10</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">66.66% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>2/3</span>
+                <span class='fraction'>0/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">90% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>9/10</span>
+                <span class='fraction'>0/10</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -109,20 +109,20 @@
 <a name='L44'></a><a href='#L44'>44</a>
 <a name='L45'></a><a href='#L45'>45</a>
 <a name='L46'></a><a href='#L46'>46</a>
-<a name='L47'></a><a href='#L47'>47</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<a name='L47'></a><a href='#L47'>47</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -154,21 +154,21 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { useState, type FormEvent } from 'react';
-import Button from '../ui/Button';
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >import { useState, type FormEvent } from 'react';</span>
+<span class="cstat-no" title="statement not covered" >import Button from '../ui/Button';</span>
 type TodoInputProps = {
   onAddTask: (taskName: string) =&gt; void;
 };
 &nbsp;
-function TodoInput({ onAddTask }: TodoInputProps) {
-  const [taskName, setTaskName] = useState('');
-  const handleAddTasks = (e: FormEvent&lt;HTMLFormElement&gt;) =&gt; {
-    e.preventDefault(); // Sometimes page is refreshed upon trigger of Event so this property is to prevent the browser from doing that
-    onAddTask(taskName);
-    setTaskName('');
+function <span class="fstat-no" title="function not covered" >TodoInput(</span>{ onAddTask }: TodoInputProps) {
+  const [taskName, setTaskName] = <span class="cstat-no" title="statement not covered" >useState('');</span>
+  const handleAddTasks = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(e</span>: FormEvent&lt;HTMLFormElement&gt;) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    e.preventDefault(); </span>// Sometimes page is refreshed upon trigger of Event so this property is to prevent the browser from doing that
+<span class="cstat-no" title="statement not covered" >    onAddTask(taskName);</span>
+<span class="cstat-no" title="statement not covered" >    setTaskName('');</span>
   };
-  return (
+<span class="cstat-no" title="statement not covered" >  return (</span>
     &lt;form className="flex" onSubmit={handleAddTasks}&gt;
       {/*Below is the traditional onKeyDown method Commented for learning purposes*/}
       {/* &lt;input
@@ -200,7 +200,7 @@ function TodoInput({ onAddTask }: TodoInputProps) {
   );
 }
 &nbsp;
-export default TodoInput;
+<span class="cstat-no" title="statement not covered" >export default TodoInput;</span>
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -208,7 +208,7 @@ export default TodoInput;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-05-31T08:34:11.244Z
+                at 2025-06-11T15:08:58.636Z
             </div>
         <script src="../../../prettify.js"></script>
         <script>

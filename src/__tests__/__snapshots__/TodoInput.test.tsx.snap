@@ -1,0 +1,148 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoInput calls onAddTask when form is submitted via Enter key 1`] = `
+<div>
+  <form
+    class="flex"
+  >
+    <input
+      class="flex-grow p-2 border rounded-l focus:outline-none focus:ring-2 focus:ring-blue-300"
+      placeholder="Enter text..."
+      type="text"
+      value=""
+    />
+    <button
+      class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 ml-2 rounded-r rounded-l"
+      type="submit"
+    >
+      +
+    </button>
+  </form>
+</div>
+`;
+
+exports[`TodoInput calls onAddTask with correct value when form is submitted via button click 1`] = `
+<div>
+  <form
+    class="flex"
+  >
+    <input
+      class="flex-grow p-2 border rounded-l focus:outline-none focus:ring-2 focus:ring-blue-300"
+      placeholder="Enter text..."
+      type="text"
+      value=""
+    />
+    <button
+      class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 ml-2 rounded-r rounded-l"
+      type="submit"
+    >
+      +
+    </button>
+  </form>
+</div>
+`;
+
+exports[`TodoInput clears input field after successful submission 1`] = `
+<div>
+  <form
+    class="flex"
+  >
+    <input
+      class="flex-grow p-2 border rounded-l focus:outline-none focus:ring-2 focus:ring-blue-300"
+      placeholder="Enter text..."
+      type="text"
+      value=""
+    />
+    <button
+      class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 ml-2 rounded-r rounded-l"
+      type="submit"
+    >
+      +
+    </button>
+  </form>
+</div>
+`;
+
+exports[`TodoInput does not call onAddTask when input is empty 1`] = `
+<div>
+  <form
+    class="flex"
+  >
+    <input
+      class="flex-grow p-2 border rounded-l focus:outline-none focus:ring-2 focus:ring-blue-300"
+      placeholder="Enter text..."
+      type="text"
+      value=""
+    />
+    <button
+      class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 ml-2 rounded-r rounded-l"
+      type="submit"
+    >
+      +
+    </button>
+  </form>
+</div>
+`;
+
+exports[`TodoInput handles form submission correctly 1`] = `
+<div>
+  <form
+    class="flex"
+  >
+    <input
+      class="flex-grow p-2 border rounded-l focus:outline-none focus:ring-2 focus:ring-blue-300"
+      placeholder="Enter text..."
+      type="text"
+      value=""
+    />
+    <button
+      class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 ml-2 rounded-r rounded-l"
+      type="submit"
+    >
+      +
+    </button>
+  </form>
+</div>
+`;
+
+exports[`TodoInput renders input field and button correctly 1`] = `
+<div>
+  <form
+    class="flex"
+  >
+    <input
+      class="flex-grow p-2 border rounded-l focus:outline-none focus:ring-2 focus:ring-blue-300"
+      placeholder="Enter text..."
+      type="text"
+      value=""
+    />
+    <button
+      class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 ml-2 rounded-r rounded-l"
+      type="submit"
+    >
+      +
+    </button>
+  </form>
+</div>
+`;
+
+exports[`TodoInput updates input value when typing 1`] = `
+<div>
+  <form
+    class="flex"
+  >
+    <input
+      class="flex-grow p-2 border rounded-l focus:outline-none focus:ring-2 focus:ring-blue-300"
+      placeholder="Enter text..."
+      type="text"
+      value="New task"
+    />
+    <button
+      class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 ml-2 rounded-r rounded-l"
+      type="submit"
+    >
+      +
+    </button>
+  </form>
+</div>
+`;

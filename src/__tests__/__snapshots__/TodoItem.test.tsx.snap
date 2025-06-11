@@ -1,0 +1,357 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoItem calls onDelete when delete button is clicked 1`] = `
+<div>
+  <ul>
+    <li
+      class="flex items-center gap-2 py-2 border-b"
+    >
+      <input
+        class="h-5 w-5"
+        type="checkbox"
+      />
+      <span
+        class=""
+      >
+        Sample task
+      </span>
+      <button
+        class="ml-auto bg-red-500 hover:bg-red-700 text-white text-sm py-1 px-2 rounded"
+      >
+        <img
+          alt="Delete"
+          class="w-6 h-6"
+          src="https://img.icons8.com/?size=50&id=OD5jprZTbcDK&format=png"
+          style="filter: invert(1) brightness(2);"
+        />
+      </button>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`TodoItem calls onToggle when checkbox is clicked 1`] = `
+<div>
+  <ul>
+    <li
+      class="flex items-center gap-2 py-2 border-b"
+    >
+      <input
+        class="h-5 w-5"
+        type="checkbox"
+      />
+      <span
+        class=""
+      >
+        Sample task
+      </span>
+      <button
+        class="ml-auto bg-red-500 hover:bg-red-700 text-white text-sm py-1 px-2 rounded"
+      >
+        <img
+          alt="Delete"
+          class="w-6 h-6"
+          src="https://img.icons8.com/?size=50&id=OD5jprZTbcDK&format=png"
+          style="filter: invert(1) brightness(2);"
+        />
+      </button>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`TodoItem does not call callbacks on render 1`] = `
+<div>
+  <li
+    class="flex items-center gap-2 py-2 border-b"
+  >
+    <input
+      class="h-5 w-5"
+      type="checkbox"
+    />
+    <span
+      class=""
+    >
+      Sample task
+    </span>
+    <button
+      class="ml-auto bg-red-500 hover:bg-red-700 text-white text-sm py-1 px-2 rounded"
+    >
+      <img
+        alt="Delete"
+        class="w-6 h-6"
+        src="https://img.icons8.com/?size=50&id=OD5jprZTbcDK&format=png"
+        style="filter: invert(1) brightness(2);"
+      />
+    </button>
+  </li>
+</div>
+`;
+
+exports[`TodoItem handles checkbox change via fireEvent 1`] = `
+<div>
+  <ul>
+    <li
+      class="flex items-center gap-2 py-2 border-b"
+    >
+      <input
+        class="h-5 w-5"
+        type="checkbox"
+      />
+      <span
+        class=""
+      >
+        Sample task
+      </span>
+      <button
+        class="ml-auto bg-red-500 hover:bg-red-700 text-white text-sm py-1 px-2 rounded"
+      >
+        <img
+          alt="Delete"
+          class="w-6 h-6"
+          src="https://img.icons8.com/?size=50&id=OD5jprZTbcDK&format=png"
+          style="filter: invert(1) brightness(2);"
+        />
+      </button>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`TodoItem handles different priority values 1`] = `
+<div>
+  <ul>
+    <li
+      class="flex items-center gap-2 py-2 border-b"
+    >
+      <input
+        class="h-5 w-5"
+        type="checkbox"
+      />
+      <span
+        class=""
+      >
+        Sample task
+      </span>
+      <button
+        class="ml-auto bg-red-500 hover:bg-red-700 text-white text-sm py-1 px-2 rounded"
+      >
+        <img
+          alt="Delete"
+          class="w-6 h-6"
+          src="https://img.icons8.com/?size=50&id=OD5jprZTbcDK&format=png"
+          style="filter: invert(1) brightness(2);"
+        />
+      </button>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`TodoItem handles multiple tasks with different states: taskCompleted 1`] = `
+<div>
+  <li
+    class="flex items-center gap-2 py-2 border-b"
+  >
+    <input
+      class="h-5 w-5"
+      type="checkbox"
+    />
+    <span
+      class="line-through text-gray-500"
+    >
+      Task 2
+    </span>
+    <button
+      class="ml-auto bg-red-500 hover:bg-red-700 text-white text-sm py-1 px-2 rounded"
+    >
+      <img
+        alt="Delete"
+        class="w-6 h-6"
+        src="https://img.icons8.com/?size=50&id=OD5jprZTbcDK&format=png"
+        style="filter: invert(1) brightness(2);"
+      />
+    </button>
+  </li>
+</div>
+`;
+
+exports[`TodoItem handles multiple tasks with different states: taskNotCompleted 1`] = `
+<div>
+  <li
+    class="flex items-center gap-2 py-2 border-b"
+  >
+    <input
+      class="h-5 w-5"
+      type="checkbox"
+    />
+    <span
+      class=""
+    >
+      Task 1
+    </span>
+    <button
+      class="ml-auto bg-red-500 hover:bg-red-700 text-white text-sm py-1 px-2 rounded"
+    >
+      <img
+        alt="Delete"
+        class="w-6 h-6"
+        src="https://img.icons8.com/?size=50&id=OD5jprZTbcDK&format=png"
+        style="filter: invert(1) brightness(2);"
+      />
+    </button>
+  </li>
+</div>
+`;
+
+exports[`TodoItem handles multiple tasks with different states: taskWithoutPriority 1`] = `
+<div>
+  <li
+    class="flex items-center gap-2 py-2 border-b"
+  >
+    <input
+      class="h-5 w-5"
+      type="checkbox"
+    />
+    <span
+      class=""
+    >
+      Task 3
+    </span>
+    <button
+      class="ml-auto bg-red-500 hover:bg-red-700 text-white text-sm py-1 px-2 rounded"
+    >
+      <img
+        alt="Delete"
+        class="w-6 h-6"
+        src="https://img.icons8.com/?size=50&id=OD5jprZTbcDK&format=png"
+        style="filter: invert(1) brightness(2);"
+      />
+    </button>
+  </li>
+</div>
+`;
+
+exports[`TodoItem handles task without priority 1`] = `
+<div>
+  <ul>
+    <li
+      class="flex items-center gap-2 py-2 border-b"
+    >
+      <input
+        class="h-5 w-5"
+        type="checkbox"
+      />
+      <span
+        class=""
+      >
+        Task without priority
+      </span>
+      <button
+        class="ml-auto bg-red-500 hover:bg-red-700 text-white text-sm py-1 px-2 rounded"
+      >
+        <img
+          alt="Delete"
+          class="w-6 h-6"
+          src="https://img.icons8.com/?size=50&id=OD5jprZTbcDK&format=png"
+          style="filter: invert(1) brightness(2);"
+        />
+      </button>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`TodoItem renders children when provided 1`] = `
+<div>
+  <ul>
+    <li
+      class="flex items-center gap-2 py-2 border-b"
+    >
+      <input
+        class="h-5 w-5"
+        type="checkbox"
+      />
+      <span
+        class=""
+      >
+        Sample task
+      </span>
+      <button
+        class="ml-auto bg-red-500 hover:bg-red-700 text-white text-sm py-1 px-2 rounded"
+      >
+        <img
+          alt="Delete"
+          class="w-6 h-6"
+          src="https://img.icons8.com/?size=50&id=OD5jprZTbcDK&format=png"
+          style="filter: invert(1) brightness(2);"
+        />
+      </button>
+      <span>
+        Additional content
+      </span>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`TodoItem renders completed task with correct styles 1`] = `
+<div>
+  <ul>
+    <li
+      class="flex items-center gap-2 py-2 border-b"
+    >
+      <input
+        checked=""
+        class="h-5 w-5"
+        type="checkbox"
+      />
+      <span
+        class="line-through text-gray-500"
+      >
+        Sample task
+      </span>
+      <button
+        class="ml-auto bg-red-500 hover:bg-red-700 text-white text-sm py-1 px-2 rounded"
+      >
+        <img
+          alt="Delete"
+          class="w-6 h-6"
+          src="https://img.icons8.com/?size=50&id=OD5jprZTbcDK&format=png"
+          style="filter: invert(1) brightness(2);"
+        />
+      </button>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`TodoItem renders task title and checkbox correctly 1`] = `
+<div>
+  <ul>
+    <li
+      class="flex items-center gap-2 py-2 border-b"
+    >
+      <input
+        class="h-5 w-5"
+        type="checkbox"
+      />
+      <span
+        class=""
+      >
+        Sample task
+      </span>
+      <button
+        class="ml-auto bg-red-500 hover:bg-red-700 text-white text-sm py-1 px-2 rounded"
+      >
+        <img
+          alt="Delete"
+          class="w-6 h-6"
+          src="https://img.icons8.com/?size=50&id=OD5jprZTbcDK&format=png"
+          style="filter: invert(1) brightness(2);"
+        />
+      </button>
+    </li>
+  </ul>
+</div>
+`;
