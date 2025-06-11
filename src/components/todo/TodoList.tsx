@@ -1,31 +1,26 @@
-import { type PropsWithChildren } from 'react';
 import { type Task } from '../../features/todos/TodoTaskTypes';
+import TodoItem from './TodoItem';
 
-type TodoItemProps = PropsWithChildren<{
-  task: Task;
+type TodoListProps = {
+  tasks: Task[];
   onDelete: (id: number) => void;
   onToggle: (id: number) => void;
-}>;
+};
 
-export default function TodoItem({ task, onDelete, onToggle, children }: TodoItemProps) {
+export default function TodoList({ tasks, onDelete, onToggle }: TodoListProps) {
+  if (tasks.length === 0) {
+    return (
+      <div className="text-center py-8">
+        <p className="text-gray-500">No tasks yet! Add your first task above.</p>
+      </div>
+    );
+  }
+
   return (
-    <li className="flex items-center gap-2 py-2 border-b">
-      <input 
-        type="checkbox" 
-        checked={task.isCompleted}
-        onChange={() => onToggle(task.id)}
-        className="h-5 w-5"
-      />
-      <span className={task.isCompleted ? "line-through text-gray-500" : ""}>
-        {task.title}
-      </span>
-      <button 
-        onClick={() => onDelete(task.id)}
-        className="ml-auto bg-red-500 hover:bg-red-700 text-white text-sm py-1 px-2 rounded"
-      >
-        Delete
-      </button>
-      {children}
-    </li>
+    <ul className="space-y-2">
+      {tasks.map(task => (
+        <TodoItem key={task.id} task={task} onDelete={onDelete} onToggle={onToggle} />
+      ))}
+    </ul>
   );
 }

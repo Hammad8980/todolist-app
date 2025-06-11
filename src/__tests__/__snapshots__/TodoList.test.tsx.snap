@@ -1,0 +1,282 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoList Mocks TodoItem component with sample task 1`] = `
+<div>
+  <ul>
+    <li
+      class="flex items-center gap-2 py-2 border-b"
+    >
+      <input
+        class="h-5 w-5"
+        type="checkbox"
+      />
+      <span
+        class=""
+      >
+        Mock task
+      </span>
+      <button
+        class="ml-auto bg-red-500 hover:bg-red-700 text-white text-sm py-1 px-2 rounded"
+      >
+        <img
+          alt="Delete"
+          class="w-6 h-6"
+          src="https://img.icons8.com/?size=50&id=OD5jprZTbcDK&format=png"
+          style="filter: invert(1) brightness(2);"
+        />
+      </button>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`TodoList passes correct props to TodoItem components 1`] = `
+<div>
+  <ul
+    class="space-y-2"
+  >
+    <li
+      class="flex items-center gap-2 py-2 border-b"
+    >
+      <input
+        class="h-5 w-5"
+        type="checkbox"
+      />
+      <span
+        class=""
+      >
+        First task
+      </span>
+      <button
+        class="ml-auto bg-red-500 hover:bg-red-700 text-white text-sm py-1 px-2 rounded"
+      >
+        <img
+          alt="Delete"
+          class="w-6 h-6"
+          src="https://img.icons8.com/?size=50&id=OD5jprZTbcDK&format=png"
+          style="filter: invert(1) brightness(2);"
+        />
+      </button>
+    </li>
+    <li
+      class="flex items-center gap-2 py-2 border-b"
+    >
+      <input
+        checked=""
+        class="h-5 w-5"
+        type="checkbox"
+      />
+      <span
+        class="line-through text-gray-500"
+      >
+        Second task
+      </span>
+      <button
+        class="ml-auto bg-red-500 hover:bg-red-700 text-white text-sm py-1 px-2 rounded"
+      >
+        <img
+          alt="Delete"
+          class="w-6 h-6"
+          src="https://img.icons8.com/?size=50&id=OD5jprZTbcDK&format=png"
+          style="filter: invert(1) brightness(2);"
+        />
+      </button>
+    </li>
+    <li
+      class="flex items-center gap-2 py-2 border-b"
+    >
+      <input
+        class="h-5 w-5"
+        type="checkbox"
+      />
+      <span
+        class=""
+      >
+        Third task
+      </span>
+      <button
+        class="ml-auto bg-red-500 hover:bg-red-700 text-white text-sm py-1 px-2 rounded"
+      >
+        <img
+          alt="Delete"
+          class="w-6 h-6"
+          src="https://img.icons8.com/?size=50&id=OD5jprZTbcDK&format=png"
+          style="filter: invert(1) brightness(2);"
+        />
+      </button>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`TodoList renders all tasks when tasks are provided 1`] = `
+<div>
+  <ul
+    class="space-y-2"
+  >
+    <li
+      class="flex items-center gap-2 py-2 border-b"
+    >
+      <input
+        class="h-5 w-5"
+        type="checkbox"
+      />
+      <span
+        class=""
+      >
+        First task
+      </span>
+      <button
+        class="ml-auto bg-red-500 hover:bg-red-700 text-white text-sm py-1 px-2 rounded"
+      >
+        <img
+          alt="Delete"
+          class="w-6 h-6"
+          src="https://img.icons8.com/?size=50&id=OD5jprZTbcDK&format=png"
+          style="filter: invert(1) brightness(2);"
+        />
+      </button>
+    </li>
+    <li
+      class="flex items-center gap-2 py-2 border-b"
+    >
+      <input
+        checked=""
+        class="h-5 w-5"
+        type="checkbox"
+      />
+      <span
+        class="line-through text-gray-500"
+      >
+        Second task
+      </span>
+      <button
+        class="ml-auto bg-red-500 hover:bg-red-700 text-white text-sm py-1 px-2 rounded"
+      >
+        <img
+          alt="Delete"
+          class="w-6 h-6"
+          src="https://img.icons8.com/?size=50&id=OD5jprZTbcDK&format=png"
+          style="filter: invert(1) brightness(2);"
+        />
+      </button>
+    </li>
+    <li
+      class="flex items-center gap-2 py-2 border-b"
+    >
+      <input
+        class="h-5 w-5"
+        type="checkbox"
+      />
+      <span
+        class=""
+      >
+        Third task
+      </span>
+      <button
+        class="ml-auto bg-red-500 hover:bg-red-700 text-white text-sm py-1 px-2 rounded"
+      >
+        <img
+          alt="Delete"
+          class="w-6 h-6"
+          src="https://img.icons8.com/?size=50&id=OD5jprZTbcDK&format=png"
+          style="filter: invert(1) brightness(2);"
+        />
+      </button>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`TodoList renders empty state when no tasks are provided 1`] = `
+<div>
+  <div
+    class="text-center py-8"
+  >
+    <p
+      class="text-gray-500"
+    >
+      No tasks yet! Add your first task above.
+    </p>
+  </div>
+</div>
+`;
+
+exports[`TodoList renders the correct number of tasks 1`] = `
+<div>
+  <ul
+    class="space-y-2"
+  >
+    <li
+      class="flex items-center gap-2 py-2 border-b"
+    >
+      <input
+        class="h-5 w-5"
+        type="checkbox"
+      />
+      <span
+        class=""
+      >
+        First task
+      </span>
+      <button
+        class="ml-auto bg-red-500 hover:bg-red-700 text-white text-sm py-1 px-2 rounded"
+      >
+        <img
+          alt="Delete"
+          class="w-6 h-6"
+          src="https://img.icons8.com/?size=50&id=OD5jprZTbcDK&format=png"
+          style="filter: invert(1) brightness(2);"
+        />
+      </button>
+    </li>
+    <li
+      class="flex items-center gap-2 py-2 border-b"
+    >
+      <input
+        checked=""
+        class="h-5 w-5"
+        type="checkbox"
+      />
+      <span
+        class="line-through text-gray-500"
+      >
+        Second task
+      </span>
+      <button
+        class="ml-auto bg-red-500 hover:bg-red-700 text-white text-sm py-1 px-2 rounded"
+      >
+        <img
+          alt="Delete"
+          class="w-6 h-6"
+          src="https://img.icons8.com/?size=50&id=OD5jprZTbcDK&format=png"
+          style="filter: invert(1) brightness(2);"
+        />
+      </button>
+    </li>
+    <li
+      class="flex items-center gap-2 py-2 border-b"
+    >
+      <input
+        class="h-5 w-5"
+        type="checkbox"
+      />
+      <span
+        class=""
+      >
+        Third task
+      </span>
+      <button
+        class="ml-auto bg-red-500 hover:bg-red-700 text-white text-sm py-1 px-2 rounded"
+      >
+        <img
+          alt="Delete"
+          class="w-6 h-6"
+          src="https://img.icons8.com/?size=50&id=OD5jprZTbcDK&format=png"
+          style="filter: invert(1) brightness(2);"
+        />
+      </button>
+    </li>
+  </ul>
+</div>
+`;

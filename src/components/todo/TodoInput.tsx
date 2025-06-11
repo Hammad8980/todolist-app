@@ -1,4 +1,5 @@
-import { useState, type FormEvent} from 'react';
+import { useState, type FormEvent } from 'react';
+import Button from '../ui/Button';
 type TodoInputProps = {
   onAddTask: (taskName: string) => void;
 };
@@ -11,7 +12,7 @@ function TodoInput({ onAddTask }: TodoInputProps) {
     setTaskName('');
   };
   return (
-    <form onSubmit={handleAddTasks}>
+    <form className="flex" onSubmit={handleAddTasks}>
       {/*Below is the traditional onKeyDown method Commented for learning purposes*/}
       {/* <input
           value={taskName}
@@ -29,15 +30,15 @@ function TodoInput({ onAddTask }: TodoInputProps) {
         type="text"
         value={taskName}
         placeholder="Enter text..."
-        onChange={(e) => setTaskName(e.target.value)}
+        onChange={e => setTaskName(e.target.value)}
         className="flex-grow p-2 border rounded-l focus:outline-none focus:ring-2 focus:ring-blue-300"
       />
-      <button
-      type='submit'
-       className="bg-blue-500 hover:bg-blue-700 text-white font-bold ml-2 pb-0.5 px-2 rounded">
-        {' '}
-        +{' '}
-      </button>
+      <Button
+        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 ml-2 rounded-r rounded-l"
+        type="submit"
+      >
+        +
+      </Button>
     </form>
   );
 }

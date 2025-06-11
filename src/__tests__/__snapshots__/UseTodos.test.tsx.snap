@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`useTodos should add a new task 1`] = `
+{
+  "isLoading": false,
+  "onAddTask": [Function],
+  "onDeleteTask": [Function],
+  "onToggleTask": [Function],
+  "todos": [
+    {
+      "id": 1749654255943,
+      "isCompleted": false,
+      "priority": "p1",
+      "title": "New Task",
+    },
+  ],
+}
+`;
+
+exports[`useTodos should catch error when saving to storage fails 1`] = `
+{
+  "isLoading": false,
+  "onAddTask": [Function],
+  "onDeleteTask": [Function],
+  "onToggleTask": [Function],
+  "todos": [
+    {
+      "id": 1749654256027,
+      "isCompleted": false,
+      "priority": "p1",
+      "title": "Trigger Error",
+    },
+  ],
+}
+`;
+
+exports[`useTodos should delete a task 1`] = `
+{
+  "isLoading": false,
+  "onAddTask": [Function],
+  "onDeleteTask": [Function],
+  "onToggleTask": [Function],
+  "todos": [],
+}
+`;
+
+exports[`useTodos should initialize with loading state 1`] = `
+{
+  "isLoading": true,
+  "onAddTask": [Function],
+  "onDeleteTask": [Function],
+  "onToggleTask": [Function],
+  "todos": [],
+}
+`;
+
+exports[`useTodos should load todos from storage after timeout 1`] = `
+{
+  "isLoading": false,
+  "onAddTask": [Function],
+  "onDeleteTask": [Function],
+  "onToggleTask": [Function],
+  "todos": [
+    {
+      "id": 1,
+      "isCompleted": false,
+      "title": "Test",
+    },
+  ],
+}
+`;
+
+exports[`useTodos should not add an empty task 1`] = `
+{
+  "isLoading": false,
+  "onAddTask": [Function],
+  "onDeleteTask": [Function],
+  "onToggleTask": [Function],
+  "todos": [],
+}
+`;
+
+exports[`useTodos should save todos to storage when todos change 1`] = `
+{
+  "isLoading": false,
+  "onAddTask": [Function],
+  "onDeleteTask": [Function],
+  "onToggleTask": [Function],
+  "todos": [
+    {
+      "id": 1749654256017,
+      "isCompleted": false,
+      "priority": "p1",
+      "title": "Persist Task",
+    },
+  ],
+}
+`;
+
+exports[`useTodos should toggle a task 1`] = `
+{
+  "isLoading": false,
+  "onAddTask": [Function],
+  "onDeleteTask": [Function],
+  "onToggleTask": [Function],
+  "todos": [
+    {
+      "id": 1749654255995,
+      "isCompleted": false,
+      "priority": "p1",
+      "title": "Toggle Task",
+    },
+  ],
+}
+`;
